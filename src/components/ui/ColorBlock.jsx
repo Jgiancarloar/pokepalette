@@ -76,7 +76,10 @@ const ColorBlock = ({ label, variable }) => {
     };
 
     return (
-        <div className={`bg-[var(${variable})] border border-gray-300 flex h-12 items-center justify-between px-2 rounded-md`}>
+        <div
+        className="border border-gray-300 flex h-12 items-center justify-between px-2 rounded-md"
+        style={{ backgroundColor: `var(${variable})` }}
+      >
             <span className="font-semibold text-white">{label}</span>
             <div className='flex gap-2 text-xs'>
                 <button
