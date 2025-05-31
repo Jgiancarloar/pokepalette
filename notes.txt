@@ -1,0 +1,41 @@
+ useEffect(() => {
+        const fetchPokemons = async () => {
+            try {
+                const stored = localStorage.getItem('pokemons');
+                if (stored) {
+                    const pokemonsData = JSON.parse(stored);
+                    setPokemons(pokemonsData);
+                    const random = pokemonsData[Math.floor(Math.random() * pokemonsData.length)];
+                    setSelectedPokemon(random);
+                    return;
+                }
+
+                const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1010');
+                const data = await res.json();
+
+                const detailedPokemons = data.results.map((poke) => {
+                    const idMatch = poke.url.match(/\/pokemon\/(\d+)\//);
+                    const id = idMatch ? idMatch[1] : null;
+
+                    return {
+                        id,
+                        name: poke.name,
+                        pixelSprite: pixelSpriteURL(id),
+                        pixelGif: pixelGifURL(poke.name),
+                        officialArtwork: officialArtworkURL(id),
+                    };
+                });
+
+                setPokemons(detailedPokemons);
+                localStorage.setItem('pokemons', JSON.stringify(detailedPokemons));
+
+                const random = detailedPokemons[Math.floor(Math.random() * detailedPokemons.length)];
+                setSelectedPokemon(random);
+
+            } catch (error) {
+                console.error('Error fetching pokemons:', error);
+            }
+        };
+
+        fetchPokemons();
+    }, []);

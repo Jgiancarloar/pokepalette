@@ -1,0 +1,118 @@
+{
+    "navbar": {
+        "brand": "pokepalette",
+        "links": {
+            "palettes": "paletas",
+            "testimonials": "testimonios",
+            "howItWorks": "¿cómo funciona?",
+            "feedback": "sugerencias"
+        }
+    },
+    "hero": {
+        "title": "Colores que inspiran.",
+        "subtitle": "Diseños que evolucionan.",
+        "description": "Descubre paletas de colores únicas basadas en tus Pokémon favoritos.",
+        "paragraph": "Pokepalette convierte la esencia de cada Pokémon en una combinación perfecta de colores para tus proyectos. Ideal para diseñadores, desarrolladores y fans del diseño con estilo.",
+        "explore": "Explorar paletas",
+        "howItWorks": "¿Cómo funciona?"
+    },
+    "reasons": {
+        "title": "¿Por qué usar Pokepalette?",
+        "items": [
+            {
+                "title": "Inspiración real",
+                "text": "Basamos cada paleta en Pokémon reales, dándole vida y personalidad a tu diseño."
+            },
+            {
+                "title": "Fácil de usar",
+                "text": "Selecciona un Pokémon y obtén una paleta lista para copiar o personalizar."
+            },
+            {
+                "title": "Creatividad potenciada",
+                "text": "Mejora tus proyectos con colores únicos, equilibrados y memorables."
+            },
+            {
+                "title": "Multilenguaje",
+                "text": "Disponible en español e inglés. Tú eliges cómo vivir la experiencia."
+            }
+        ]
+    },
+    "palette": {
+        "title": "La paleta perfecta según tu estilo",
+        "items": [
+            "Selecciona un Pokémon y copia colores en segundos. Ideal para prototipos.",
+            "Ajusta tonos, guarda tus combinaciones, explora variantes.",
+            "Descubre paletas aleatorias para desbloquear nuevas ideas.",
+            "Aplica colores a una mini landing y visualiza tu estilo en acción."
+        ]
+    },
+    "testimonials": {
+        "title": "Lo que dicen nuestros usuarios",
+        "items": [
+            {
+                "name": "Squirtle",
+                "role": "Diseñador UI",
+                "text": "Como tipo agua, buscaba paletas que fluyeran. Pokepalette reflejó mis tonos celestes y arenosos. ¡Todo fluye ahora!",
+                "region": "Región Kanto"
+            },
+            {
+                "name": "Umbreon",
+                "role": "Frontend Dev",
+                "text": "Quería un dashboard con mi esencia oscura y eléctrica. Pokepalette lo hizo épico con mis tonos.",
+                "region": "Región Johto"
+            },
+            {
+                "name": "Sylveon",
+                "role": "Ilustradora",
+                "text": "Coloreaba sin rumbo, pero Pokepalette me dio armonía. Ahora combino tonos suaves como nunca.",
+                "region": "Región Kalos"
+            },
+            {
+                "name": "Infernape",
+                "role": "Branding Designer",
+                "text": "Mi portafolio necesitaba fuerza y fuego. Pokepalette mezcló rojo, negro y dorado como un volcán.",
+                "region": "Región Sinnoh"
+            }
+        ]
+    },
+    "howItWorks": {
+        "title": "¿Cómo funciona Pokepalette?",
+        "steps": [
+            {
+                "title": "Elige un Pokémon",
+                "description": "Usa el buscador para encontrar tu favorito."
+            },
+            {
+                "title": "Genera paleta",
+                "description": "Extraemos 6 colores clave de su diseño."
+            },
+            {
+                "title": "Experimenta",
+                "description": "Visualiza tu paleta en una landing y copia los códigos."
+            }
+        ]
+    },
+    "feedback": {
+        "title": "Ayúdanos a mejorar Pokepalette",
+        "description": "Tu opinión nos importa. ¿Qué función te gustaría ver? ¿Qué mejorarías del diseño? Cuéntanos tu idea y haz que Pokepalette evolucione como un buen Pokémon.",
+        "emailPlaceholder": "Ingresa tu email",
+        "textareaPlaceholder": "Escribe tus comentarios aquí...",
+        "button": "Enviar feedback"
+    },
+    "footer": {
+        "madeWith": "Hecho con ❤️ por Jheyson Alvarez",
+        "copyright": "Pokepalette ©"
+    },
+    "sidebar": {
+        "palettes": "Paletas",
+        "testimonials": "Testimonios",
+        "howItWorks": "¿Cómo funciona?",
+        "feedback": "Sugerencias"
+    },
+    "controlPanel":{
+        "color":"Color",
+        "random":"Aleatorio",
+        "background":"Fondo",
+        "text":"Texto"
+    }
+}

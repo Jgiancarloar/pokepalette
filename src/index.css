@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg1: #fff;
+  --bg2: #fff;
+  --bg3: #fff;
+  --text1: #000;
+  --text2: #000;
+  --text3: #000;
+}
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+.image-pixelated {
+  image-rendering: pixelated;
+}
