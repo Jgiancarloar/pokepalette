@@ -44,7 +44,7 @@ const ControlPanel = () => {
     }, []);
 
     return (
-        <div className="bottom-10 md:bottom-50 fixed max-w-md px-5 right-0 w-full z-50">
+        <div className="bottom-10 lg:bottom-20 fixed max-w-md px-5 right-0 w-full z-50">
             <div
                 className='backdrop-blur-md bg-gray-200/50 flex flex-col gap-2 p-5 rounded-md'
                 ref={panelRef}
