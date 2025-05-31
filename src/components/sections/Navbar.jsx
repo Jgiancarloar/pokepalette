@@ -20,7 +20,7 @@ const Navbar = ({ openMenu, setOpenMenu }) => {
     return (
         <div className='bg-white shadow-md sticky top-0 z-50'>
             <nav className='flex h-20 items-center justify-between max-w-7xl mx-auto px-5 md:px-10'>
-                <h2 className='cursor-pointer font-black italic text-[var(--text1)] text-xl uppercase'>
+                <h2 className='cursor-pointer font-black italic text-[var(--text1)] text-xl md:text-2xl uppercase'>
                     <ScrollLink
                         to="hero"
                         smooth={true}
