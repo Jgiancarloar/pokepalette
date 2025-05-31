@@ -98,7 +98,7 @@ const Navbar = ({ openMenu, setOpenMenu }) => {
                         )}
                         <div>
                             <a
-                                href="https://www.buymeacoffee.com/tuusuario"
+                                href="https://www.buymeacoffee.com/jalvarezr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
