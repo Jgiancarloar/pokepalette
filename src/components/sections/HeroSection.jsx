@@ -50,6 +50,12 @@ const HeroSection = () => {
                 src={selectedPokemon?.pixelSprite}
                 alt="Imagen del pokemon"
                 className='absolute h-full image-pixelated top-0 left-0 w-full p-10 object-contain' />
+              <span className='absolute font-black italic top-5 left-5 opacity-20 text-center text-4xl text-white uppercase'>{selectedPokemon?.name}</span>
+              <span className='absolute font-black italic bottom-5 right-5 opacity-30 text-center text-4xl text-white uppercase'>
+                {selectedPokemon?.id !== undefined
+                  ? `#${selectedPokemon.id.toString().padStart(4, '0')}`
+                  : ""}
+              </span>
             </div>
           </div>
         </div>

@@ -1,11 +1,14 @@
+import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbColorSwatch, TbBolt, TbBrain, TbWorld } from 'react-icons/tb'
+import { PokemonContext } from '../../context/PokemonContext'
 
 const icons = [TbColorSwatch, TbBolt, TbBrain, TbWorld]
 
 const ReasonsSection = () => {
   const { t } = useTranslation()
   const reasons = t('reasons.items', { returnObjects: true })
+  const{selectedPokemon} = useContext(PokemonContext)
 
   return (
     <div id='reasons' className='bg-[var(--bg1)]/10 w-full'>

@@ -32,7 +32,7 @@ const Navbar = ({ openMenu, setOpenMenu }) => {
                     </ScrollLink>
                 </h2>
                 <div className='flex items-center gap-5'>
-                    <ul className='md:flex font-semibold hidden gap-5'>
+                    <ul className='lg:flex font-semibold hidden gap-5'>
                         <li>
                             <ScrollLink
                                 to="palette-mode"
@@ -106,19 +106,19 @@ const Navbar = ({ openMenu, setOpenMenu }) => {
                                 <img
                                     src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
                                     alt="Buy Me a Coffee"
-                                    className="h-10 w-10 block lg:hidden"
+                                    className="h-10 w-10 block md:hidden"
                                 />
 
                                 {/* Botón completo - visible en pantallas grandes */}
                                 <img
                                     src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
                                     alt="Buy Me a Coffee"
-                                    className="h-10 w-auto hidden lg:block"
+                                    className="h-10 w-auto hidden md:block"
                                 />
                             </a>
                         </div>
                         <button
-                            className='md:hidden h-10 text-[var(--text1)] w-10'
+                            className='lg:hidden h-10 text-[var(--text1)] w-10'
                             onClick={() => setOpenMenu(!openMenu)}
                             aria-label="Toggle menu"
                         >

@@ -31,14 +31,14 @@ const Sidebar = ({ openMenu, setOpenMenu }) => {
     ]
 
     return (
-        <div className={`bg-white fixed md:hidden inset-0 h-screen top-0 w-full z-40 pt-20 
+        <div className={`bg-white fixed lg:hidden inset-0 h-screen top-0 w-full z-40 pt-20 
         ${openMenu ? 'translate-x-0' : '-translate-x-full'} transition-all duration-500`}>
             <ul className='flex flex-col font-semibold gap-5'>
                 {menuItems.map(({ id, label, img }, idx) => (
-                    <li key={idx} className='border-b border-gray-300 flex items-center gap-5 overflow-hidden p-7 text-[var(--text1)] relative'>
+                    <li key={idx} className='border-b border-gray-300 flex items-center gap-5 overflow-hidden p-7 md:px-20 text-[var(--text1)] relative'>
                         <img
                             alt="Imagen de pokemon"
-                            className='absolute top-0 -right-10 w-1/3 brightness-0'
+                            className='absolute top-0 md:-top-5 -right-10 w-1/3 brightness-0'
                             src={img}
                         />
                         <div className='relative flex items-center gap-5'>

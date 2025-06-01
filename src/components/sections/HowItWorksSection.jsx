@@ -11,7 +11,7 @@ const HowItWorksSection = () => {
   return (
     <div id='how-it-works' className='w-full'>
       <div className='flex flex-col gap-10 max-w-7xl mx-auto px-5 md:px-10 py-10 md:py-20 w-full'>
-        <h2 className='font-bold text-center text-3xl lg:text-5xl text-[var(--text2)]'>
+        <h2 className='font-bold relative text-center text-3xl lg:text-5xl text-[var(--text2)]'>
           {t('howItWorks.title')}
         </h2>
         <div className='gap-10 grid grid-cols-1 md:grid-cols-3'>
