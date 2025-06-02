@@ -83,7 +83,7 @@ const ColorBlock = ({ label, variable }) => {
             <span className="font-semibold text-white">{label}</span>
             <div className='flex gap-2 text-xs'>
                 <button
-                    className='bg-gray-700 px-2 py-2 rounded-md text-white'
+                    className='bg-gray-700 cursor-pointer px-2 py-2 rounded-md text-white'
                     onClick={handleCopy}
                 >
                     {copy ? <span className='font-medium text-white'>¡Copiado!</span> : <TbCopy />}
@@ -91,7 +91,7 @@ const ColorBlock = ({ label, variable }) => {
                 {['HEX', 'RGB', 'HSL'].map((fmt) => (
                     <button
                         key={fmt}
-                        className={`px-2 py-2 rounded-md ${type === fmt ? 'bg-gray-700 text-white' : 'bg-white'}`}
+                        className={`cursor-pointer px-2 py-2 rounded-md ${type === fmt ? 'bg-gray-700 text-white' : 'bg-white'}`}
                         onClick={() => setType(fmt)}
                     >
                         {fmt}

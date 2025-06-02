@@ -29,7 +29,7 @@ const App = () => {
     <PokemonProvider>
       <main className='font-montserrat'>
         <button
-          className={`bg-white fixed border-2 border-[var(--text1)] h-10 p-1 rounded-full top-[100px] right-5 w-10 z-50 ${openMenu?'hidden':'block'}`}
+          className={`bg-white cursor-pointer fixed border-2 border-[var(--text1)] h-10 p-1 rounded-full top-[100px] right-5 w-10 z-50 ${openMenu?'hidden':'block'}`}
           onClick={() => setOpenPanel(!openPanel)}
         >
           {openPanel ? <TbX className='h-full w-full text-[var(--text1)]' /> : <TbSettings className='h-full w-full text-[var(--text1)]' />}
