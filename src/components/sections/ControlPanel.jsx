@@ -82,7 +82,7 @@ const ControlPanel = ({ openPanel, setOpenPanel }) => {
                                 {filteredPokemons.map((pokemon) => (
                                     <li
                                         key={pokemon.id}
-                                        className='bg-gray-100 p-2 rounded-md w-full cursor-pointer whitespace-nowrap truncate'
+                                        className='bg-gray-300 p-2 rounded-md w-full cursor-pointer whitespace-nowrap truncate'
                                         onClick={() => {
                                             setSelectedPokemon(pokemon);
                                             setShowSuggestions(false);
