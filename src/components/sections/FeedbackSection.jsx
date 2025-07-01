@@ -43,12 +43,12 @@ const FeedbackSection = () => {
         <h2 className='font-bold text-center text-3xl lg:text-5xl text-[var(--text2)]'>
           {t('feedback.title')}
         </h2>
-        <p className='font-medium max-w-4xl text-center'>
+        <p className='font-medium max-w-4xl text-center text-[var(--text3)]'>
           {t('feedback.description')}
         </p>
         <form className='max-w-md w-full' onSubmit={handleSubmit}>
           <input
-            className='border border-[var(--bg1)] mb-5 outline-none p-3 rounded-md text-black w-full'
+            className='border border-[var(--bg1)] text-[var(--bg1)] mb-5 outline-none p-3 rounded-md w-full'
             placeholder={t('feedback.emailPlaceholder')}
             type="email"
             value={email}
@@ -57,7 +57,7 @@ const FeedbackSection = () => {
             name='user_email'
           />
           <textarea
-            className='border border-[var(--bg1)] mb-5 min-h-40 outline-none p-3 rounded-md text-black w-full'
+            className='border border-[var(--bg1)] text-[var(--bg1)] mb-5 min-h-40 outline-none p-3 rounded-md w-full'
             placeholder={t('feedback.textareaPlaceholder')}
             value={message}
             onChange={e => setMessage(e.target.value)}

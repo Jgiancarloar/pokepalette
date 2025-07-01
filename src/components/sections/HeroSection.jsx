@@ -22,7 +22,7 @@ const HeroSection = () => {
           <h2 className='font-light italic mb-5 text-2xl lg:text-3xl text-[var(--text2)]'>
             {t("hero.description")}
           </h2>
-          <p className='font-medium mb-5'>
+          <p className='font-medium mb-5 text-[var(--text3)]'>
             {t("hero.paragraph")}
           </p>
           <div className='flex flex-col lg:flex-row gap-5'>
@@ -50,8 +50,8 @@ const HeroSection = () => {
                 src={selectedPokemon?.pixelSprite}
                 alt="Imagen del pokemon"
                 className='absolute h-full image-pixelated top-0 left-0 w-full p-10 object-contain' />
-              <span className='absolute font-black italic top-5 left-5 opacity-20 text-center text-4xl text-white uppercase'>{selectedPokemon?.name}</span>
-              <span className='absolute font-black italic bottom-5 right-5 opacity-30 text-center text-4xl text-white uppercase'>
+              <span className='absolute font-black italic top-5 left-5 opacity-50 text-center text-4xl text-black uppercase'>{selectedPokemon?.name}</span>
+              <span className='absolute font-black italic bottom-5 right-5 opacity-50 text-center text-black text-4xl uppercase'>
                 {selectedPokemon?.id !== undefined
                   ? `#${selectedPokemon.id.toString().padStart(4, '0')}`
                   : ""}

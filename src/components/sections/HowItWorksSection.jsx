@@ -25,7 +25,7 @@ const HowItWorksSection = () => {
                 <h3 className='font-semibold mb-3 text-xl text-[var(--text3)]'>
                   {step.title}
                 </h3>
-                <p className='text-sm'>
+                <p className='text-sm text-[var(--text3)]'>
                   {step.description}
                 </p>
               </div>

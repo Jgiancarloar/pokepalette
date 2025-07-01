@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <PokemonProvider>
-      <main className='font-montserrat'>
+      <main className='bg-slate-950 font-montserrat'>
         <button
           className={`bg-white cursor-pointer fixed border-2 border-[var(--text1)] h-10 p-1 rounded-full top-[100px] right-5 w-10 z-50 ${openMenu?'hidden':'block'}`}
           onClick={() => setOpenPanel(!openPanel)}

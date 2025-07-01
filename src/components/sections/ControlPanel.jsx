@@ -51,7 +51,7 @@ const ControlPanel = ({ openPanel, setOpenPanel }) => {
 
                     <div className='flex gap-2'>
                         <button
-                            className='bg-white border border-gray-300 cursor-pointer flex gap-2 h-12 items-center justify-center rounded-md w-full'
+                            className='bg-white hidden border border-gray-300 cursor-pointer flex gap-2 h-12 items-center justify-center rounded-md w-full'
                             onClick={() => setShowColors(!showColors)}
                         >
                             <span className='font-semibold'>

@@ -24,10 +24,10 @@ const ReasonsSection = () => {
                 <div className='bg-[var(--bg3)]/50 h-20 mb-5 p-3 rounded-lg text-[var(--text3)] w-20'>
                   <Icon className='h-full w-full' strokeWidth={1.5} />
                 </div>
-                <h3 className='font-semibold mb-3 text-xl text-[var(--text3)]'>
+                <h3 className='font-semibold mb-3 text-xl text-[var(--text2)]'>
                   {reason.title}
                 </h3>
-                <p className='text-sm'>
+                <p className='text-sm text-[var(--text3)]'>
                   {reason.text}
                 </p>
               </div>
